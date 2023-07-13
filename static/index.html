@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Beauty Pets</title>
+    <link rel="stylesheet" href="css/signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js">
+    </script>
+  </head>
+  
+  <body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.0/sweetalert.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('a[href^="#"]').on('click', function(event) {
+          var target = $(this.getAttribute('href'));
+          if( target.length ) {
+            event.preventDefault();
+            $('html, body').stop().animate({
+              scrollTop: target.offset().top
+            }, 1000);
+          } 
+        });
+        });
+    </script>
+    
+    <header>
+      <img src="image/Home3.jpg" class="home-section">
+      <nav>
+        <ul>
+          <div class="wlogo"><a class="logo"href="#"><img src="image/logo2.png" alt="logo"></a></div>
+          <li><a class="active" href="#home">Home</a></li>
+          <li><a class="active" href="#about">About Us</a></li>
+          <li><a class="active" href="#services">Services</a></li>
+          <li><a class="active" href="#slider">Album</a></li>
+          <li><a class="active" href="#faq">FAQS</a></li>
+          <li class="auth">
+            <a href="contactus.html" class="button">Contact Us</a>
+            <a href="login.html" class="button">Log in</a>
+            <a href="register.html" class="button">Register</a>
+          </li>
+        </ul>
+      </nav>
+      
+      <script>
+      window.addEventListener('scroll', function() {
+        var nav = document.querySelector('nav');
+        var logo = document.querySelector('.logo');
+        var auth = document.querySelector('.auth');
+        nav.classList.toggle('scrolled', window.scrollY > 0);
+        logo.classList.toggle('scrolled', window.scrollY > 0);
+        auth.classList.toggle('scrolled', window.scrollY > 0);
+      });
+      </script>
+      
+      <script>
+      // Add smooth scrolling to all links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+          });
+        });
+      });
+      </script>
+
+    </header>
+    
+    <!-- Welcome Message & About Us Section-->
+    <article>
+      <section id="about">
+        <div class="background"></div>
+        <div class="container-home">
+          <h3 id="BPGS"> Beauty Pets Grooming Service</h3>
+          <h3 id="ypd">CARING YOUR FURRY PETS LIKE FAMILY</h3>
+        </div>
+      </section>
+
+      <section id="welcome">
+        <h1>WELCOME TO BEAUTY PETS!<p>where we do more on grooming our client beautiful pets.</p></h1><br>
+      </section>
+    
+      <section id="about">
+        <div style="display: flex;">
+          <section id="about" style="flex-basis: 60%;">
+            <div class="container-about">
+              <h1>ABOUT US</h1><br>
+              <p>Are you searching for a reliable dog grooming service that will make your pet look and feel their best?</p>
+              <p>Then go to Beauty Pet Grooming Service right away!</p>
+              <p>We the Beauty Pets will handle your dog with the utmost care and respect since we recognise that he or she is a family member.</p>
+              <p>We are dedicated to giving our clients the best possible treatment and we only employ the greatest tools and methods, and we are always looking for new ways to enhance the services we provide.</p>
+              <p>We offer a full-range of grooming services to pamper your pooch.</p>
+              <p>You and your furry friend will bring out their beauty!.</p>
+            </div>
+          </section>
+          <section id="info" style="flex-basis: 30%;">
+            <div class="container-info">
+              <h3 id="info" style="text-transform: uppercase;">INFO</h3><br>
+              <p>We welcome small to larged sized breeds.</p><br>
+              <h3 id="phone" style="text-transform: uppercase;">CONTACT DETAILS</h3><br>
+              <p># 09123456789</p><br>
+              <h3 id="hours" style="text-transform: uppercase;">BUSINESS HOURS</h3><br>
+              <p>Monday to Friday - 10:00am to 05:00pm</p><br>
+              <p>Saturday - 08:00am to 12:00pm</p>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      
+      </div>
+    </article>
+    
+    <!-- Services Section-->
+    <section id="services">
+      <div class="container-services">
+        <h1>S   E  R   V   I   C   E   S</h1>
+        <h3>We use only high quality products that suit the needs of your pet and our professional groomers are experienced with all types of clips. Choose from any of our services listed below.</h3><br>
+        <div class="row">
+          <div class="col-md-6">
+            <ul>
+              <h1>PACKAGES</h1>
+              <li>
+                <h3>BATHING & DRYING </h3><br>
+                <p>We used anti-flea and anti-tick shampoo to get rid of or stop any of these pests from festering in your pet's coat. We will then towel dry them and proceed with an air dryer.</p>
+              </li>
+              <li>
+                <h3>BRUSHING & COMBING</h3><br>
+                <p>The damaged and dead hair will be removed by us using the right brushes for the coat type, promoting the growth of new hair for a healthier coat. Also, your pet's natural oils are distributed and dead skin is removed throughout the brushing process.</p>
+              </li>
+              <li>
+                <h3>BEAUTY HOME SERVICE</h3><br>
+                <p>Our Beauty Home Service begins with customer of choices in our Services or à la carte menu. with free shower for our besties and with 2 bottles of perfume so they can smell good. our service fee is free.</p>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <ul>
+              <h1>à la carte</h1>
+              <li>
+                <h3>NAIL CLIPPING & NAIL GRINDING</h2><br>
+                <p>Nails are trimmed to keep your pet’s paws healthy. And your pet's nails are filed to soften the edges of the nails.</p>
+              </li>
+              <li>
+                <h3>EAR CLEANING & PLUCKING</h3><br>
+                <p>The hair around the ears is cleansed with our natural, hypoallergenic treatments and cut to allow for improved ventilation in order to prevent infections and smells.</p>
+              </li>
+              <li>
+                <h3>ANAL GLAND ESPRESSION</h3><br>
+                <p> To stop discomfort and get rid of unpleasant smells.</p>
+              </li>
+              </li>
+              <li>
+                <h3>TEETH BRUSHING</h3><br>
+                <p>The hair around the ears is cleansed with our organic, hypoallergenic treatments and cut to allow for improved ventilation in order to prevent infections and odours.</p>
+              </li>
+          
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <article>
+      <section id="slider">
+        <div class="slide-container">
+            <div class="slide-subcontainer">
+                <div class="slider-wrapper">
+                    <div>
+                        <h1>A     L     B      U     M</h1>
+                    </div>
+                    <br>
+                    <div class="my-slider">
+                        <div>
+                            <div class="slide">
+                                <div class="slide-img">
+                                    <img src="image/Hair Trimming.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="slide">
+                                <div class="slide-img">
+                                    <img src="image/2.jpg">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="slide">
+                                <div class="slide-img">
+                                    <img src="image/3.jpg">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="slide">
+                                <div class="slide-img">
+                                    <img src="image/4.jpg">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="slide">
+                                <div class="slide-img">
+                                    <img src="image/5.jpg">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="slide">
+                                <div class="slide-img">
+                                    <img src="image/6.jpg">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+          let slider = tns({
+            container : ".my-slider",
+            "slideBy" : "1",
+            "speed" : 400,
+            "nav" : false,
+            autoplay : true,
+            controls : false,
+            autoplayButtonOutput: false,
+            responsive: {
+              500: {
+                items: 3,
+                gutter : 20
+              },
+            }
+          })
+        </script>
+        
+      </section>
+
+    </article>
+    
+  <article>
+  <section id="faq">
+    <div class="container-faq">
+      <h1>Frequently asked questions</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <h2>What can I expect on our first visit?</h2><br>
+          <p>On your first visit to the salon, please ensure your pet is up-to-date on their rabies vaccinations. Proof is required.</p><br>
+        <h2>Can I wait for my dog?</h2><br>
+      <p>Most dogs become excited when they see their owners and might become stressed or anxious if they can’t immediately go to them. To avoid extra excitement or stress for the dog, we recommend you do not stay while your dog is being groomed or bathed.</p><br>
+      
+      <h2>Do you accept all dogs?</h2><br>
+      <p>We welcome dogs of all sizes and breeds.</p><br>
+      
+    </div>
+    <div class="col-md-6">
+      <h2>How much does grooming cost?</h2><br>
+      <p>Grooming prices depend on the size and breed of the dog.</p><br>
+      
+      <h2>How often should I have my dog groomed?</h2><br>
+      <p>Your dog should be groomed every 6 to 8 weeks.</p><br>
+      
+      <h2>Do I need to make an appointment?</h2><br>
+      <p>Dogs with extremely matted hair, very thick coats or temperamental personalities may be subject to supplementary charges if additional time and extra care is required. If we determine your dog’s coat is too severely matted, we will suggest it be clipped instead to avoid undue pain or discomfort to the dog.</p><br>
+      
+      <h2>How long does it take?</h2><br>
+      <p>Grooming time depends on the size and breed of the dog, as well as the services requested. When you arrive for your appointment, we will do our best to give you an approximate pick-up time. Generally speaking, you should expect to leave your dog with us between 2 to 4 hours.</p><br>
+    </div>
+  </div>
+  </div>
+  </section>
+  </article>
+
+  
+    <div class="footer">
+      <p>Footer</p>
+    </div>
+  
+  
+</body>
+</html>

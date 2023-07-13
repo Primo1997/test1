@@ -1,0 +1,75 @@
+body {
+    background-color: #C4A484;
+    font-family: Verdana, sans-serif;
+  }
+  .card-header {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    text-align: center;
+
+  }
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #FFF;
+  background-image: -webkit-linear-gradient(90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 25%,
+    transparent 100%,
+    rgba(0, 0, 0, 1) 75%,
+    transparent);
+}
+.row-mb-3 {
+  font-size: 2rem;
+}
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    font-family: Verdana, sans-serif;
+    align-items: center;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+  }
+  input[type="email"], input[type="password"], input[type="text"] {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+    width: 100%;
+    max-width: 30rem;
+  }
+  label {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  button[type="submit"] {
+    background-color: #CF7F06;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 2rem;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  button[type="submit"]:hover {
+    background-color: #E3A43D;
+  }

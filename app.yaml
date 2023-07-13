@@ -1,0 +1,15 @@
+runtime: python39
+entrypoint: gunicorn -b :$PORT main:app
+
+handlers:
+  - url: /(.*\.(html|css|jpg|png|gif))
+    static_files: static/\1
+    upload: static/.*\.(html|css|jpg|png|gif)
+
+  - url: /contactus
+    static_files: static/contactus.html
+    upload: static/contactus.html
+
+  - url: /.*
+    static_files: static/index.html
+    upload: static/index.html
